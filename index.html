@@ -1,5 +1,4 @@
-<!-- 
- /**
+<!-- /**
  * 💻 Developed by: **Majid Mansouri**
  * Role: Full-Stack Developer | Software Engineer
  *
@@ -10,20 +9,50 @@
  * Portfolio: https://majidproject.github.io/web-portfolio/
  *
  * Status: Educational/Personal Use Only
- */
--->
+ */ -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>todo-vanilla</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Stack Tracker — Vanilla JS</title>
 </head>
 <body>
 
+  <main class="todo-app">
+    <h1>Tech Stack Roadmap</h1>
 
+    <section class="progress-bar-container">
+        <p id="progress-text">Progress: 0/0 (0%)</p>
+        <div class="progress-bar-track">
+            <div id="progressBar" class="progress-bar-fill"></div>
+        </div>
+    </section>
+
+    <section class="input-row">
+      <input id="newTodo" type="text" placeholder="Add a new skill or task (e.g., Learn React Hooks)..." autocomplete="off" />
+      
+      <select id="taskCategory" aria-label="Select Task Category">
+        <option value="Frontend">Frontend</option>
+        <option value="Backend">Backend</option>
+        <option value="Database">Database</option>
+        <option value="DevOps">DevOps</option>
+        <option value="General">General</option>
+      </select>
+
+      <button id="addTodoBtn">Add</button>
+    </section>
+
+    <ul id="todoList" class="todo-list" aria-live="polite"></ul>
+
+    <section class="filters" aria-label="Task Filters">
+      <button data-filter="all" class="active">All Stacks</button>
+      <button data-filter="active">Active Learning</button>
+      <button data-filter="completed">Mastered</button>
+      </section>
+  </main>
 
   <script src="script.js"></script>
 </body>

@@ -10,3 +10,223 @@
  *
  * Status: Educational/Personal Use Only
  */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #e9eff6;
+  color: #222;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.todo-app {
+  width: 460px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.8rem;
+  box-shadow: 0 10px 30px rgba(18, 38, 63, 0.1);
+}
+
+h1 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  color: #174ea6;
+  text-align: center;
+}
+
+.input-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+#newTodo {
+  flex: 2;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #c8d3e6;
+  outline: none;
+}
+
+#newTodo:focus {
+  box-shadow: 0 0 0 3px rgba(23, 78, 166, 0.1);
+  border-color: #5c9eff;
+}
+
+#taskCategory {
+  flex: 1;
+  padding: 0.6rem 0.4rem;
+  border-radius: 8px;
+  border: 1px solid #c8d3e6;
+  background: #f7f9fc;
+  cursor: pointer;
+  outline: none;
+}
+
+#addTodoBtn {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #174ea6;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#addTodoBtn:hover {
+  background: #0d3880;
+}
+
+.progress-bar-container {
+  margin-bottom: 1.5rem;
+  padding: 0.8rem 1rem;
+  background: #f0f4f8;
+  border-radius: 10px;
+  border: 1px solid #e1e7f0;
+}
+
+#progress-text {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #174ea6;
+}
+
+.progress-bar-track {
+  height: 8px;
+  background: #dfe8f2;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  width: 0%;
+  height: 100%;
+  background: #28a745;
+  border-radius: 4px;
+  transition: width 0.4s ease-in-out;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 380px;
+  overflow-y: auto;
+  border-top: 1px solid #e9eff6;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #e9eff6;
+  cursor: pointer;
+  transition: background 160ms ease, color 160ms ease, border-left 160ms ease;
+  border-left: 5px solid transparent;
+}
+
+.todo-list li:hover {
+  background: #fcfdfe;
+}
+
+.todo-list li .text {
+  flex: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  font-weight: 500;
+}
+
+.todo-list li.completed {
+  background: #f4f8fc;
+  border-left: 5px solid #28a745;
+}
+
+.todo-list li.completed .text {
+  text-decoration: none;
+  color: #666;
+  font-style: italic;
+}
+
+.delete-btn {
+  margin-left: 0.6rem;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background 160ms ease, transform 120ms ease;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+  transform: translateY(-1px);
+}
+
+.filters {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.filters button {
+  background: #e9edf2;
+  border: 1px solid #d8e0e9;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.12s ease, background 0.12s ease;
+  font-size: 0.9rem;
+}
+
+.filters button:hover {
+  background: #e1e7f0;
+}
+
+.filters button.active {
+  background: #174ea6;
+  color: #fff;
+  border-color: #174ea6;
+  box-shadow: 0 4px 12px rgba(23, 78, 166, 0.2);
+  transform: translateY(-1px) scale(1.02);
+}
+
+.todo-list li .category-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-right: 0.75rem;
+  color: #fff;
+  background: #6c757d;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.todo-list li[data-category="Frontend"] .category-tag {
+  background: #0077cc;
+}
+
+.todo-list li[data-category="Backend"] .category-tag {
+  background: #28a745;
+}
+
+.todo-list li[data-category="Database"] .category-tag {
+  background: #dc3545;
+}
+
+.todo-list li[data-category="DevOps"] .category-tag {
+  background: #ffc107;
+  color: #343a40;
+}
