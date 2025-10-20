@@ -1,8 +1,8 @@
----
-# 📝 License: [MIT](./LICENSE)
-
-![CI Status](https://github.com/majidproject/learn-todo-vanilla/actions/workflows/ci.yml/badge.svg)
 # 🎯 Todo-Vanilla: Pure JavaScript Todo Application
+
+[![CI Status](https://github.com/majidproject/learn-todo-vanilla/actions/workflows/ci.yml/badge.svg)](https://github.com/majidproject/learn-todo-vanilla/actions)
+[![Code Coverage](https://img.shields.io/badge/Coverage-84%25-brightgreen?style=flat-square)](#-testing-and-technical-challenges)
+[![License: MIT](./LICENSE)](./LICENSE)
 
 **Project Status:** Completed W02-S03 (DOM Testing)
 
