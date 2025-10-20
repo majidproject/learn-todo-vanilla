@@ -2,17 +2,29 @@
 
 [![CI Status](https://github.com/majidproject/learn-todo-vanilla/actions/workflows/ci.yml/badge.svg)](https://github.com/majidproject/learn-todo-vanilla/actions)
 [![Code Coverage](https://img.shields.io/badge/Coverage-84%25-brightgreen?style=flat-square)](#-testing-and-technical-challenges)
-[![License: MIT](./LICENSE)](./LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/majidproject/learn-todo-vanilla/blob/main/LICENSE)
 
 **Project Status:** Completed W02-S03 (DOM Testing)
 
 This project is a minimal, pure JavaScript (ES Modules) Todo list application developed as part of the 12-Month Full-Stack Learning Roadmap. The focus for **W02-S03** was achieving high test coverage and reliability for DOM manipulation logic using **Vitest** and **JSDOM**.
 
+
+---
+
+## ✨ Live Demo & Visual Overview
+
+**🔗 Live Demo:** [https://majidproject.github.io/learn-todo-vanilla/](https://majidproject.github.io/learn-todo-vanilla/)
+
+![Screenshot of Todo App Functionality](assets/demo-w02-s02.gif) | 
+
+---
+
+## 📊 Technical Report
+
 | Metric | Status | Link / Details |
 | :--- | :--- | :--- |
-| **Code Coverage** | **84%** | [![Code Coverage](https://img.shields.io/badge/Coverage-84%25-brightgreen?style=flat-square)]
-| **Live Demo** | Available | ![Demo of Tech Stack Tracker](assets/demo-w02-s02.gif) |
-| **Test Report** | 5/5 Tests Passed | [Test Run Link Placeholder] |
+| **Test Report** | 5/5 Tests Passed | [GitHub Actions Log](https://github.com/majidproject/learn-todo-vanilla/actions/runs/18664524751) |
+| **Code Coverage** | **84%** | [See Coverage Section Below](#-testing-and-technical-challenges) |
 
 ---
 
