@@ -1,3 +1,7 @@
+---
+# 📝 License: [MIT](./LICENSE)
+
+![CI Status](https://github.com/majidproject/learn-todo-vanilla/actions/workflows/ci.yml/badge.svg)
 # 🎯 Todo-Vanilla: Pure JavaScript Todo Application
 
 **Project Status:** Completed W02-S03 (DOM Testing)
