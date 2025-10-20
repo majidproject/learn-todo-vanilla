@@ -24,7 +24,7 @@ This project is a minimal, pure JavaScript (ES Modules) Todo list application de
 | Metric | Status | Link / Details |
 | :--- | :--- | :--- |
 | **Test Report** | 5/5 Tests Passed | [GitHub Actions Log](https://github.com/majidproject/learn-todo-vanilla/actions/runs/18664524751) |
-| **Code Coverage** | **84%** | [See Coverage Section Below](#-testing-and-technical-challenges) |
+| **Code Coverage** | **84%** | [See Coverage Section Below](#testing-and-technical-challenges) |
 
 ---
 
