@@ -1,7 +1,7 @@
 # 🎯 Todo-Vanilla: Pure JavaScript Todo Application
 
 [![CI Status](https://github.com/majidproject/learn-todo-vanilla/actions/workflows/ci.yml/badge.svg)](https://github.com/majidproject/learn-todo-vanilla/actions)
-[![Code Coverage](https://img.shields.io/badge/Coverage-84%25-brightgreen?style=flat-square)](#-testing-and-technical-challenges)
+[![Code Coverage](https://img.shields.io/badge/Coverage-84%25-brightgreen?style=flat-square)](#testing-and-technical-challenges)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/majidproject/learn-todo-vanilla/blob/main/LICENSE)
 
 **Project Status:** Completed W02-S03 (DOM Testing)
