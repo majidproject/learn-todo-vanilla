@@ -36,7 +36,7 @@ This project is a minimal, pure JavaScript (ES Modules) Todo list application de
 
 ---
 
-## 🧪 Testing and Technical Challenges (W02-S03)
+## Testing and Technical Challenges
 
 The primary goal was to ensure all DOM-interacting logic in `script.js` was fully testable and stable in a virtual DOM environment. The following major challenges were encountered and their solutions implemented to achieve 84% coverage:
 
