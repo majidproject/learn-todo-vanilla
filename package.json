@@ -1,0 +1,33 @@
+{
+  "name": "todo-vanilla",
+  "version": "1.0.0",
+  "description": "A 30-second demonstration of adding tasks, marking them as 'Mastered', and observing the progress bar update dynamically.",
+  "main": "script.js",
+  "scripts": {
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/majidproject/learn-todo-vanilla.git"
+  },
+  "type": "module",
+  "test": {
+    "environment": "jsdom",
+    "globals": true
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/majidproject/learn-todo-vanilla/issues"
+  },
+  "homepage": "https://github.com/majidproject/learn-todo-vanilla#readme",
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@vitest/coverage-v8": "^3.2.4",
+    "jsdom": "^27.0.1",
+    "vitest": "^3.2.4"
+  }
+}
