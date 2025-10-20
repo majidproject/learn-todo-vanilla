@@ -1,0 +1,31 @@
+# .github/workflows/ci.yml
+
+name: CI - Run Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20' # یا نسخه‌ای که در لوکال استفاده می‌کنید (مثلا 18)
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run Vitest (with Coverage)
+      # اجرای همان دستوری که شما برای تست‌ها استفاده کردید
+      run: npm run coverage 
+      # از آنجا که تست‌ها و پوشش کد شما پاس شده‌اند، این مرحله باید با موفقیت به پایان برسد
